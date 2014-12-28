@@ -927,6 +927,10 @@ div.img-wrap-centre span{
 .image-wrap img {
 	width: 100%;
 	/*border: 2px solid yellow;remove later*/	
+	border-radius: 165px;
+    -webkit-border-radius: 165px;
+    -moz-border-radius: 165px;
+    -o-border-radius: 165px;
 }
 
 .image-wrap  .hover-wrap {
