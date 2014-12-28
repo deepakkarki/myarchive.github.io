@@ -904,18 +904,21 @@ div.img-wrap-centre {
    /* box-shadow:0 0 5px 5px #FFF;*/
     -webkit-border-radius: 170px;
     -moz-border-radius: 170px;
+    -o-border-radius: 170px;
     border-radius: 170px;
 }
 
 div.img-wrap-centre div{
     -webkit-border-radius: 170px;
     -moz-border-radius: 170px;
+    -o-border-radius: 170px;
     border-radius: 170px;
 }
 
 div.img-wrap-centre span{
     -webkit-border-radius: 165px;
     -moz-border-radius: 165px;
+    -o-border-radius: 165px;
     border-radius: 165px;
 }
 
