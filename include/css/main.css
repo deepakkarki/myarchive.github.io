@@ -902,24 +902,26 @@ div.img-wrap-centre {
     margin: 0 auto;
     border: 5px solid #ccc;
    /* box-shadow:0 0 5px 5px #FFF;*/
+    border-radius: 170px;
     -webkit-border-radius: 170px;
     -moz-border-radius: 170px;
     -o-border-radius: 170px;
-    border-radius: 170px;
 }
 
 div.img-wrap-centre div{
+    border-radius: 170px;
     -webkit-border-radius: 170px;
     -moz-border-radius: 170px;
     -o-border-radius: 170px;
-    border-radius: 170px;
+
 }
 
 div.img-wrap-centre span{
+
+    border-radius: 165px;
     -webkit-border-radius: 165px;
     -moz-border-radius: 165px;
     -o-border-radius: 165px;
-    border-radius: 165px;
 }
 
 .image-wrap img {
