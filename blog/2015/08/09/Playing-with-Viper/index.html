@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Viper - Python on bare metal &middot; Deepak Karki
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/blog/public/css/poole.css">
+  <link rel="stylesheet" href="/blog/public/css/syntax.css">
+  <link rel="stylesheet" href="/blog/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/blog/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/blog/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body class="theme-base-08">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>A software developer with a passion for systems and physical computing</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/blog/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/blog/about/">About</a>
+        
+      
+    
+      
+    
+
+    <a class="sidebar-nav-item" href="http://github.com/deepakkarki">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2015. All rights reserved.
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/blog/" title="Home">Deepak Karki</a>
+            <small>Just another developer</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Viper - Python on bare metal</h1>
+  <span class="post-date">09 Aug 2015</span>
+  <div class="message">
+The <a href="http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/">Hackend Project</a> - Week 1
+</div>
+
+<p>For my very first “Hackend” I combined two of my most favourite things - Embedded systems and Python! This weekend I dived through <a href="http://www.viperize.it/">VIPER</a> - Viper is Python Embedded in Realtime (A funky recursive acronym).</p>
+
+<!--more-->
+
+<h1 id="what-is-it">What is it?</h1>
+<p>Viper is a suite of software components that enable you, the developer to quickly develop embedded systems and IoT prototypes using Python. While it is surprising to find someone coding a micro-controller in python, they have really done a great job - seemingly better than earlier efforts such as <a href="https://github.com/micropython/micropython">Micro Python</a> and <a href="https://github.com/jsnyder/python-on-a-chip">PyMite</a>. The system is portable - works seamlessly on ARM M0-M4 MCUs and easily portable across most other MCUs. It’s extremely easy to get started -</p>
+
+<ul>
+  <li>Download the browser based IDE for your OS.</li>
+  <li>Open the IDE and connect the board - My Arduino Due automatically got listed.</li>
+  <li>Burn the Viper VM (one of the components that make up the suite) onto the target board.</li>
+  <li>Clone any of the available examples and execute them on your board.</li>
+</ul>
+
+<p><img src="https://lh3.googleusercontent.com/GXxFENWTcnSOeJIpAlFMRqOEqwr1ZUbqg4JAFkdmjQU=w2560-h1406-no" alt="Viper IDE UI" title="Viper IDE" /></p>
+
+<h1 id="how-it-works">How it works?</h1>
+<p>It’s really intriguing how someone could support a huge subset of python on a micro-controller system. Looking into their system design and code base, you can easily tell the effort that has gone behind this. Looking at it from an engineering perspective, there are two key components that make the magic happen -</p>
+
+<ol>
+  <li>The compiler that runs on the PC</li>
+  <li>The VM that runs on the embedded system.</li>
+</ol>
+
+<p>The compiler is written in python - and compiles the python (that you intend to execute on your micro-controller) into efficient byte code. This byte code is then streamed to to the micro-controller running the viper VM. The viper VM is built over ChibiOS (A realtime embedded OS) and is written in C. One thing I liked about this is the support for threads (priority based and premptive) - built over the ChibiOS threading system.</p>
+
+<h1 id="what-i-learnt">What I learnt</h1>
+<p>To be honest, I just got a high level overview of how things worked. I went through the source code of the components which run on the PC side, viz. the IDE and python byte code compiler, nothing too convoluted here. What I really wanted to do was play with the source code of the VM - but alas, that was not to be! The current code documentation is quite abysmal and good just for reference, I’d have to spend over a week before I figure <em>what is what</em> in the source code!</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/blog/2015/08/08/The-Hackend-Project/">
+            The Hackend Project
+            <small>08 Aug 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blog/2015/08/07/Dummy-Post/">
+            Example content
+            <small>07 Aug 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>
