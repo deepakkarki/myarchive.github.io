@@ -4,13 +4,53 @@
  <title>Deepak Karki</title>
  <link href="http://deepakkarki.github.io/blog/atom.xml" rel="self"/>
  <link href="http://deepakkarki.github.io/blog/"/>
- <updated>2015-08-09T00:02:17+05:30</updated>
+ <updated>2015-08-11T22:09:22+05:30</updated>
  <id>http://deepakkarki.github.io</id>
  <author>
    <name>Deepak Karki</name>
    <email>deepak6k@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Viper - Python on bare metal</title>
+   <link href="http://deepakkarki.github.io/2015/08/09/Playing-with-Viper/"/>
+   <updated>2015-08-09T00:00:00+05:30</updated>
+   <id>http://deepakkarki.github.io/blog/2015/08/09/Playing-with-Viper</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+The &lt;a href=&quot;http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/&quot;&gt;Hackend Project&lt;/a&gt; - Week 1
+&lt;/div&gt;
+
+&lt;p&gt;For my very first “Hackend” I combined two of my most favourite things - Embedded systems and Python! This weekend I dived through &lt;a href=&quot;http://www.viperize.it/&quot;&gt;VIPER&lt;/a&gt; - Viper is Python Embedded in Realtime (A funky recursive acronym).&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h1 id=&quot;what-is-it&quot;&gt;What is it?&lt;/h1&gt;
+&lt;p&gt;Viper is a suite of software components that enable you, the developer to quickly develop embedded systems and IoT prototypes using Python. While it is surprising to find someone coding a micro-controller in python, they have really done a great job - seemingly better than earlier efforts such as &lt;a href=&quot;https://github.com/micropython/micropython&quot;&gt;Micro Python&lt;/a&gt; and &lt;a href=&quot;https://github.com/jsnyder/python-on-a-chip&quot;&gt;PyMite&lt;/a&gt;. The system is portable - works seamlessly on ARM M0-M4 MCUs and easily portable across most other MCUs. It’s extremely easy to get started -&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Download the browser based IDE for your OS.&lt;/li&gt;
+  &lt;li&gt;Open the IDE and connect the board - My Arduino Due automatically got listed.&lt;/li&gt;
+  &lt;li&gt;Burn the Viper VM (one of the components that make up the suite) onto the target board.&lt;/li&gt;
+  &lt;li&gt;Clone any of the available examples and execute them on your board.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/GXxFENWTcnSOeJIpAlFMRqOEqwr1ZUbqg4JAFkdmjQU=w2560-h1406-no&quot; alt=&quot;Viper IDE UI&quot; title=&quot;Viper IDE&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;how-it-works&quot;&gt;How it works?&lt;/h1&gt;
+&lt;p&gt;It’s really intriguing how someone could support a huge subset of python on a micro-controller system. Looking into their system design and code base, you can easily tell the effort that has gone behind this. Looking at it from an engineering perspective, there are two key components that make the magic happen -&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;The compiler that runs on the PC&lt;/li&gt;
+  &lt;li&gt;The VM that runs on the embedded system.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The compiler is written in python - and compiles the python (that you intend to execute on your micro-controller) into efficient byte code. This byte code is then streamed to to the micro-controller running the viper VM. The viper VM is built over ChibiOS (A realtime embedded OS) and is written in C. One thing I liked about this is the support for threads (priority based and premptive) - built over the ChibiOS threading system.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-i-learnt&quot;&gt;What I learnt&lt;/h1&gt;
+&lt;p&gt;To be honest, I just got a high level overview of how things worked. I went through the source code of the components which run on the PC side, viz. the IDE and python byte code compiler, nothing too convoluted here. What I really wanted to do was play with the source code of the VM - but alas, that was not to be! The current code documentation is quite abysmal and good just for reference, I’d have to spend over a week before I figure &lt;em&gt;what is what&lt;/em&gt; in the source code!&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>The Hackend Project</title>
