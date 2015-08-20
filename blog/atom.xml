@@ -4,13 +4,32 @@
  <title>Deepak Karki</title>
  <link href="http://deepakkarki.github.io/blog/atom.xml" rel="self"/>
  <link href="http://deepakkarki.github.io/blog/"/>
- <updated>2015-08-11T22:09:22+05:30</updated>
+ <updated>2015-08-20T22:19:23+05:30</updated>
  <id>http://deepakkarki.github.io</id>
  <author>
    <name>Deepak Karki</name>
    <email>deepak6k@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Working with frontend design</title>
+   <link href="http://deepakkarki.github.io/2015/08/15/Working-with-frontend-design/"/>
+   <updated>2015-08-15T00:00:00+05:30</updated>
+   <id>http://deepakkarki.github.io/blog/2015/08/15/Working-with-frontend-design</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+The &lt;a href=&quot;http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/&quot;&gt;Hackend Project&lt;/a&gt; - Week 2
+&lt;/div&gt;
+
+&lt;p&gt;This is my second hackend project - I dealt with developing responsive websites with HTML5 and CSS3. And no, there was no bootstrap.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Started off with understanding some HTML and CSS3 to make websites look great. Made a simple blog page and a landing page. Honestly found web dev a bit annoying at the start, but once it starts sinking in, you’ll be amazed with what you can create.&lt;/p&gt;
+
+&lt;p&gt;(I should be attaching screenshots of what I did here….)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Viper - Python on bare metal</title>
