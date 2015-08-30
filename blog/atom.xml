@@ -4,13 +4,40 @@
  <title>Deepak Karki</title>
  <link href="http://deepakkarki.github.io/blog/atom.xml" rel="self"/>
  <link href="http://deepakkarki.github.io/blog/"/>
- <updated>2015-08-20T22:19:23+05:30</updated>
+ <updated>2015-08-30T21:33:48+05:30</updated>
  <id>http://deepakkarki.github.io</id>
  <author>
    <name>Deepak Karki</name>
    <email>deepak6k@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Python C extensions</title>
+   <link href="http://deepakkarki.github.io/2015/08/22/Python-C-extensions/"/>
+   <updated>2015-08-22T00:00:00+05:30</updated>
+   <id>http://deepakkarki.github.io/blog/2015/08/22/Python-C-extensions</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+The &lt;a href=&quot;http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/&quot;&gt;Hackend Project&lt;/a&gt; - Week 3
+&lt;/div&gt;
+
+&lt;p&gt;This week I learnt about and experemented with the various ways C code can be interfaced with python.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Three main techniques I covered were&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ctypes&lt;/li&gt;
+  &lt;li&gt;SWIG&lt;/li&gt;
+  &lt;li&gt;Python/C API&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More info &lt;a href=&quot;https://github.com/deepakkarki/hackend-project/blob/master/week-4/Python-C-extensions.rst&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also, my writeup got accepted as a chapter in the book &lt;a href=&quot;http://book.pythontips.com/en/latest/python_c_extension.html&quot;&gt;intermediate python&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Working with frontend design</title>
