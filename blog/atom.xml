@@ -4,13 +4,28 @@
  <title>Deepak Karki</title>
  <link href="http://deepakkarki.github.io/blog/atom.xml" rel="self"/>
  <link href="http://deepakkarki.github.io/blog/"/>
- <updated>2015-08-30T21:33:48+05:30</updated>
+ <updated>2015-09-02T21:05:51+05:30</updated>
  <id>http://deepakkarki.github.io</id>
  <author>
    <name>Deepak Karki</name>
    <email>deepak6k@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Python C extensions</title>
+   <link href="http://deepakkarki.github.io/2015/08/30/Responsive-web-design/"/>
+   <updated>2015-08-30T00:00:00+05:30</updated>
+   <id>http://deepakkarki.github.io/blog/2015/08/30/Responsive-web-design</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+The &lt;a href=&quot;http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/&quot;&gt;Hackend Project&lt;/a&gt; - Week 4
+&lt;/div&gt;
+
+&lt;p&gt;This week I continued learning about responsive and beautiful websites. I will be putting my knowledge to the test as I take on the challenge of building my own jekyll blog template.&lt;/p&gt;
+
+&lt;!--more--&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Python C extensions</title>
