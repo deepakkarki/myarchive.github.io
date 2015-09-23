@@ -11,7 +11,7 @@
 
   <title>
     
-      Viper - Python on bare metal &middot; Deepak Karki
+      Python and SSH &middot; Deepak Karki
     
   </title>
 
@@ -92,55 +92,23 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">Viper - Python on bare metal</h1>
-  <span class="post-date">09 Aug 2015</span>
+  <h1 class="post-title">Python and SSH</h1>
+  <span class="post-date">05 Sep 2015</span>
   <div class="message">
-The <a href="http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/">Hackend Project</a> - Week 1
+The <a href="http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/">Hackend Project</a> - Week 5
 </div>
 
-<p>For my very first “Hackend” I combined two of my most favourite things - Embedded systems and Python! This weekend I dived through <a href="http://www.viperize.it/">VIPER</a> - Viper is Python Embedded in Realtime (A funky recursive acronym).</p>
+<p>This week I worked on understanding the intricacies of SSH and how to automate tasks with Python. I used the aramiko library to handle SSH sessions in my program.</p>
 
 <!--more-->
 
-<h1 id="what-is-it">What is it?</h1>
-<p>Viper is a suite of software components that enable you, the developer to quickly develop embedded systems and IoT prototypes using Python. While it is surprising to find someone coding a micro-controller in python, they have really done a great job - seemingly better than earlier efforts such as <a href="https://github.com/micropython/micropython">Micro Python</a> and <a href="https://github.com/jsnyder/python-on-a-chip">PyMite</a>. The system is portable - works seamlessly on ARM M0-M4 MCUs and easily portable across most other MCUs. It’s extremely easy to get started -</p>
-
-<ul>
-  <li>Download the browser based IDE for your OS.</li>
-  <li>Open the IDE and connect the board - My Arduino Due automatically got listed.</li>
-  <li>Burn the Viper VM (one of the components that make up the suite) onto the target board.</li>
-  <li>Clone any of the available examples and execute them on your board.</li>
-</ul>
-
-<p><img src="https://lh3.googleusercontent.com/GXxFENWTcnSOeJIpAlFMRqOEqwr1ZUbqg4JAFkdmjQU=w2560-h1406-no" alt="Viper IDE UI" title="Viper IDE" /></p>
-
-<h1 id="how-it-works">How it works?</h1>
-<p>It’s really intriguing how someone could support a huge subset of python on a micro-controller system. Looking into their system design and code base, you can easily tell the effort that has gone behind this. Looking at it from an engineering perspective, there are two key components that make the magic happen -</p>
-
-<ol>
-  <li>The compiler that runs on the PC</li>
-  <li>The VM that runs on the embedded system.</li>
-</ol>
-
-<p>The compiler is written in python - and compiles the python (that you intend to execute on your micro-controller) into efficient byte code. This byte code is then streamed to to the micro-controller running the viper VM. The viper VM is built over ChibiOS (A realtime embedded OS) and is written in C. One thing I liked about this is the support for threads (priority based and premptive) - built over the ChibiOS threading system.</p>
-
-<h1 id="what-i-learnt">What I learnt</h1>
-<p>To be honest, I just got a high level overview of how things worked. I went through the source code of the components which run on the PC side, viz. the IDE and python byte code compiler, nothing too convoluted here. What I really wanted to do was play with the source code of the VM - but alas, that was not to be! The current code documentation is quite abysmal and good just for reference, I’d have to spend over a week before I figure <em>what is what</em> in the source code!</p>
+<p>(more details and code snippets later)</p>
 
 </div>
 
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/blog/2015/09/05/Python-and-ssh/">
-            Python and SSH
-            <small>05 Sep 2015</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -156,6 +124,15 @@ The <a href="http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/">
           <a href="/blog/2015/08/22/Python-C-extensions/">
             Python C extensions
             <small>22 Aug 2015</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blog/2015/08/15/Working-with-frontend-design/">
+            Working with frontend design
+            <small>15 Aug 2015</small>
           </a>
         </h3>
       </li>

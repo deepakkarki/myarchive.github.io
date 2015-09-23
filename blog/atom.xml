@@ -4,7 +4,7 @@
  <title>Deepak Karki</title>
  <link href="http://deepakkarki.github.io/blog/atom.xml" rel="self"/>
  <link href="http://deepakkarki.github.io/blog/"/>
- <updated>2015-09-02T21:05:51+05:30</updated>
+ <updated>2015-09-23T20:54:41+05:30</updated>
  <id>http://deepakkarki.github.io</id>
  <author>
    <name>Deepak Karki</name>
@@ -13,7 +13,24 @@
 
  
  <entry>
-   <title>Python C extensions</title>
+   <title>Python and SSH</title>
+   <link href="http://deepakkarki.github.io/2015/09/05/Python-and-ssh/"/>
+   <updated>2015-09-05T00:00:00+05:30</updated>
+   <id>http://deepakkarki.github.io/blog/2015/09/05/Python-and-ssh</id>
+   <content type="html">&lt;div class=&quot;message&quot;&gt;
+The &lt;a href=&quot;http://deepakkarki.github.io/blog/2015/08/08/The-Hackend-Project/&quot;&gt;Hackend Project&lt;/a&gt; - Week 5
+&lt;/div&gt;
+
+&lt;p&gt;This week I worked on understanding the intricacies of SSH and how to automate tasks with Python. I used the aramiko library to handle SSH sessions in my program.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;(more details and code snippets later)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Responsive Design</title>
    <link href="http://deepakkarki.github.io/2015/08/30/Responsive-web-design/"/>
    <updated>2015-08-30T00:00:00+05:30</updated>
    <id>http://deepakkarki.github.io/blog/2015/08/30/Responsive-web-design</id>
