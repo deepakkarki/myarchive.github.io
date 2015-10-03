@@ -4,13 +4,32 @@
  <title>Deepak Karki</title>
  <link href="http://deepakkarki.github.io/blog/atom.xml" rel="self"/>
  <link href="http://deepakkarki.github.io/blog/"/>
- <updated>2015-09-23T20:54:41+05:30</updated>
+ <updated>2015-10-03T23:51:34+05:30</updated>
  <id>http://deepakkarki.github.io</id>
  <author>
    <name>Deepak Karki</name>
    <email>deepak6k@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>ACCS ADCOM</title>
+   <link href="http://deepakkarki.github.io/2015/09/25/ACCS-ADCOM/"/>
+   <updated>2015-09-25T00:00:00+05:30</updated>
+   <id>http://deepakkarki.github.io/blog/2015/09/25/ACCS-ADCOM</id>
+   <content type="html">&lt;p&gt;Presenting project Zygote at ACCS ADCOM.
+&lt;!--more--&gt;
+Earlier this week I had made a trip to IIT Madras to take part in the 21st International Conference on Advanced Computing and Communications - &lt;a href=&quot;http://accsindia.org/category/adcom/&quot;&gt;ADCOM 2105&lt;/a&gt;. The conference saw participation from top industrialists and professors from India and abroad. The main topic of discussion was IoT and smart cities. My project &lt;a href=&quot;https://github.com/kres/zygote&quot;&gt;Zygote&lt;/a&gt; got selected at the conference, and the paper will be indexed in IEEE Xplore.&lt;/p&gt;
+
+&lt;p&gt;My involvement with IoT was also noticed by members and friends at the W3C consortium! Here is a screenshot of the mail I received.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/3639811/10264454/6cd1d788-6a29-11e5-939f-0b9aa4debf60.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/3639811/10264453/6a9a13d6-6a29-11e5-8f4c-732c0105ce63.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a look at their proposal, and it seems amazing. So I will be working with the W3C guys in my free time to help design and develop the W3C WoT platform :)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Python and SSH</title>
