@@ -4,23 +4,7 @@
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
-<!--
-================================================
-				    MODIFICATIONS TODO
-================================================
-1. Scrap this template.
-2. Material design.
-3. Don't use BS; go for Foundation UI
-4. Make everycomponent truly responsive. [inc. circular images; the problem now it that I have fixed the 'height' property of certain images ....
-		..... such as ordell, es lab, and all project images; that makes it non responsive. Instead I should choose img of right dimensions, not force it via CSS
-		 But now that will take care of img proportion, but not size i.e. img suddenly becoming big whie resizing!! :'( ]
-UPDATE : Responsive design has been fixed for *about* and *projects*; now to take care of es lab and ordell pic!
 
-5. Better fitting images; crop and edit them properly with photoshop.
-6. Side bar navigation; instead of top.
-7. Integrate into a octopress blogging template (Sass based)
-8. Add extra sections lthat cover : presentations, articles, publications, mentor gigs etc.
--->
 <head>
 
 <!-- Meta Tags -->
@@ -43,10 +27,6 @@ UPDATE : Responsive design has been fixed for *about* and *projects*; now to tak
 
 <!-- Main Style -->
 <link href="include/css/main.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="include/css/supersized.css" rel="stylesheet">
-<link href="include/css/supersized.shutter.css" rel="stylesheet">
 
 <!-- FancyBox -->
 <link href="include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
@@ -79,28 +59,13 @@ UPDATE : Responsive design has been fixed for *about* and *projects*; now to tak
 <!-- Modernizr -->
 <script src="include/js/modernizr.js"></script>
 
-<!-- Analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'Insert Your Code']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- End Analytics -->
 
 </head>
 
 
 <body>
 
-<!-- This section is for Splash Screen -->
+<!-- This section is for Splash Screen
 
 <div class="ole">
 <section id="jSplash">
@@ -108,22 +73,22 @@ UPDATE : Responsive design has been fixed for *about* and *projects*; now to tak
 </section>
 </div>
 
-<!-- End of Splash Screen -->
+ End of Splash Screen -->
 
 <!-- Homepage Slider -->
 <div id="home-slider">
     <div class="overlay"></div>
     <div class="row">
-    <div class="span2"></div>
+      <div class="span2"></div>
 
-    <div class="span8" >
-	    <div class="slider-text" >
-		    	<div class="img-circular" ></div><br>
-		    	<b class="welcomeText">Deepak Karki</b><br>
-		    	<h5 class="punch-line" >Designer Prototyper Innovator</h5>
-	    </div>
-    </div>
-    <div class="span4"></div>
+      <div class="span8" >
+  	    <div class="slider-text" >
+  		    	<div class="img-circular" ></div><br>
+  		    	<b class="welcomeText">Deepak Karki</b><br>
+  		    	<h5 class="punch-line" >Design. Prototype. Innovate.</h5>
+  	    </div>
+      </div>
+      <div class="span2"></div>
     </div>
 </div>
 <!-- End Homepage Slider -->
@@ -169,7 +134,7 @@ UPDATE : Responsive design has been fixed for *about* and *projects*; now to tak
     </div>
     <!--end of row -->
     <div class="row">
-    	<div class="span2" style="overflow:none;"><img class="about-img" src="include/img/about/oss.png"></img> </div>
+    	<div class="span2" style="overflow:none;"><img class="about-img" src="include/img/about/oss.png"> </img> </div>
     	<div class="span8" style="test-align:center">
         <h4 style="color:white;text-align:center">   I'm a software developer from Bangalore, currently working with
           <a href="http://www.nutanix.com/">Nutanix India</a> on some cutting edge hyperconverged technology. My interests revolve around
@@ -894,13 +859,6 @@ UPDATE : Responsive design has been fixed for *about* and *projects*; now to tak
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
 <script src="include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
 <script src="include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="include/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="include/js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="include/js/main.js"></script> <!-- Default JS -->
 <!-- End Js -->
 
